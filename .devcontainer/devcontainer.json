@@ -34,5 +34,6 @@
         "yzhang.markdown-all-in-one",
         "tabnine.tabnine-vscode"
     ],
-    "features": {}
+    "features": {},
+    "forwardPorts": [5000]
 }
