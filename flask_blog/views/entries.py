@@ -20,7 +20,8 @@ def add_entry():
 
 @app.route("/entries/new", methods=["GET"])
 def new_entry():
-    return "記事の入力フォームを表示"
+    return render_template("entries/new.html")
+    # return "記事の入力フォームを表示"
 
 
 @app.route("/entries/<int:id>", methods=["GET"])
