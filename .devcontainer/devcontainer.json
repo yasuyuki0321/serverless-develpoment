@@ -32,7 +32,8 @@
         "gruntfuggly.todo-tree",
 		"editorconfig.editorconfig",
         "yzhang.markdown-all-in-one",
-        "tabnine.tabnine-vscode"
+        "tabnine.tabnine-vscode",
+        "hookyqr.beautify"
     ],
     "features": {},
     "forwardPorts": [5000]
