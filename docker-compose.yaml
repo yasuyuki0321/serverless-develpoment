@@ -9,3 +9,5 @@ services:
       - .:/src
       - ~/.gitignore:/root/.gitignore
       - ~/.gitignore_global:/root/.gitignore_global
+    ports:
+      - 5000:5000

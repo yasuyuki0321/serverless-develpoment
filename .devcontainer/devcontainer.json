@@ -3,8 +3,8 @@
     "dockerComposeFile": [
         "../docker-compose.yaml"
     ],
-	"service": "app",
-	"workspaceFolder": "/src",
+    "service": "app",
+    "workspaceFolder": "/src",
     "settings": {
         "python.analysis.extraPaths": [
             ".",
@@ -24,17 +24,16 @@
         "editor.formatOnPaste": false,
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
-         }
+        }
     },
     "extensions": [
         "ms-python.python",
         "github.github-vscode-theme",
         "gruntfuggly.todo-tree",
-		"editorconfig.editorconfig",
+        "editorconfig.editorconfig",
         "yzhang.markdown-all-in-one",
         "tabnine.tabnine-vscode",
         "hookyqr.beautify"
     ],
     "features": {},
-    "forwardPorts": [5000]
 }
