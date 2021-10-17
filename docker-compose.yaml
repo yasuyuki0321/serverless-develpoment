@@ -11,3 +11,12 @@ services:
       - ~/.gitignore_global:/root/.gitignore_global
     ports:
       - 5000:5000
+  dynamo:
+    image: amazon/dynamodb-local
+    command: -jar DynamoDBLocal.jar -dbPath /data
+    volumes:
+      - ./data:/data
+      - ~/.gitignore:/root/.gitignore
+      - ~/.gitignore_global:/root/.gitignore_global
+    ports:
+      - 8000:8000
