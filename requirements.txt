@@ -1,4 +1,5 @@
 flake8
 black
-Flask
+Flask==1.1.2
+Flask-Script
 pynamodb
