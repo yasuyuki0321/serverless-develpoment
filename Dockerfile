@@ -18,4 +18,5 @@ COPY ./.devcontainer/netscope/nscacert.pem /tmp/
 ENV NODE_EXTRA_CA_CERTS=/tmp/nscacert.pem
 
 COPY requirements.txt .
-RUN pip install -r ./requirements.txt
+RUN pip install --upgrade pip; \
+    pip install -r ./requirements.txt
