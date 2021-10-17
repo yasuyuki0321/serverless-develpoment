@@ -23,6 +23,7 @@ def add_entry():
         text=request.form["text"],
     )
     entry.save()
+    flash("新しく記事が作成されました")
     return redirect(url_for("show_entries"))
 
 
@@ -53,6 +54,7 @@ def update_entry(id):
     entry.title = request.form["title"]
     entry.text = request.form["text"]
     entry.save()
+    flash("記事が更新されました")
     return redirect(url_for("show_entries"))
 
 
@@ -61,4 +63,5 @@ def update_entry(id):
 def delete_entry(id):
     entry = Entry.get(id)
     entry.delete()
+    flash("記事が削除されました")
     return redirect(url_for("show_entries"))
